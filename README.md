@@ -1,4 +1,5 @@
-Ducktcha
+banner.gif
+#Ducktcha
 
 ​simple animated gif captcha for python. just copy ducktcha folder into your project and use it.
 ​install requirements first:
