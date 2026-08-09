@@ -1,4 +1,5 @@
-![Ducktcha Demo](banner.gif)
+<img src="banner.gif" width="100%" alt="Ducktcha Demo Banner">
+
 
 # Ducktcha
 
