@@ -1,4 +1,5 @@
 ![Ducktcha Demo](banner.gif)
+
 #Ducktcha
 
 ​simple animated gif captcha for python. just copy ducktcha folder into your project and use it.
@@ -10,15 +11,15 @@ ducktcha/app.py has a working flask app with 2 routes. GET /api/captcha/new retu
 you can just import app into your project like this:
 ​
 import sys
-import os
+```import os
 ​sys.path.append(os.path.join(os.path.dirname(file), 'ducktcha'))
 ​from ducktcha.app import app
 ​if name == 'main':
-   app.run(host='0.0.0.0', port=5000, debug=True)
+   app.run(host='0.0.0.0', port=5000, debug=True)```
 
 ​if you dont use flask or want direct control use the engine directly:
 
-​import uuid
+```​import uuid
 from captcha import CaptchaGenerator
 from store import MemoryStore
 ​engine = CaptchaGenerator()
@@ -26,4 +27,4 @@ db = MemoryStore()
 ​token = str(uuid.uuid4())
 code, img_bytes = engine.create_image()
 db.save(token, code)
-​is_correct = db.validate(token, user_code)
+​is_correct = db.validate(token, user_code)```
